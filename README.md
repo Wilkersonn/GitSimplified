@@ -33,4 +33,4 @@ L'objectif principal de ce script est de fournir une automatisation simplifiée 
 
 ## Remarque
 
-Ce script a été créé dans le cadre de l'apprentissage chez Holberton et peut être adapté aux besoins spécifiques des projets personnels.
+Ce script a été créé dans le cadre de l'apprentissage chez Holberton et peut être adapté aux besoins spécifiques des projets personnels .
