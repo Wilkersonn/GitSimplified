@@ -1,0 +1,56 @@
+
+
+# Open Source License
+
+# Permissions:
+# 1. Usage: You have the right to use, modify, and distribute this software for both personal and commercial purposes.
+# 2. Modification: You can modify the source code to suit your specific needs.
+# 3. Distribution: You can distribute the modified or unmodified code.
+
+# Limitations:
+# 1. No Resale: You are not allowed to sell or sublicense this software.
+# 2. No Republishing: Republishing the code, in its original or modified form, without proper attribution and permission is strictly prohibited.
+
+# Collaboration:
+# For public projects, it is recommended to contact the original author for any necessary permissions. Feel free to reach out to the author for collaboration, enhancements, or any specific needs related to the software.
+
+# Special Note for Holberton Students:
+# All students of Holberton School are granted automatic permission to use, modify, and distribute this software for educational and personal projects without requiring additional authorization.
+
+# Please respect the terms of this license, and if you have any questions or collaboration requests, don't hesitate to contact the original author.
+
+# Note: This script is protected by intellectual property laws. The author retains all rights to the code. Unauthorized reproduction, distribution, or use of this script may be subject to legal action.
+
+# ------------------PAST THIS CODE :------------------------------------
+
+
+alias gitadd='
+  echo -e "\e[1;31mNom du Dossier/Repertoire :\e[0m"
+  read -p "Réponse :" filename
+  git add "$filename"
+
+  echo -e "\e[1;31mContenu du commit :\e[0m"
+  read -p "Réponse :" commit_msg
+  git commit -m "$commit_msg"
+
+  read -p "Souhaitez-vous push ? (y/n) : " push_option
+  if [ "$push_option" == "y" ]; then
+    git push
+    echo -e " "
+    echo -e " "
+    echo -e "\e[32m                                           __ \e[0m"
+    echo -e "\e[32m _____         _      _____           _   |  |\e[0m"
+    echo -e "\e[32m|  _  |_ _ ___| |_   |   __|___ ___ _| |  |  |\e[0m"
+    echo -e "\e[32m|   __| | |_ -|   |  |__   | -_|   | . |  |__|\e[0m"
+    echo -e "\e[32m|__|  |___|___|_|_|  |_____|___|_|_|___|  |__|\e[0m"
+    echo -e "\e[32m                                      \e[0m"
+    echo -e " "
+    echo -e " "
+
+  else
+    echo -e "Push annulé"
+  fi
+'
+
+
+# ------------------STOP PASTINGwq:------------------------------------
